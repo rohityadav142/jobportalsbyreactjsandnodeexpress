@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.parent{
+  min-height: 200%;
+  width: 100%;
+  background-color:plum;
+  padding: 30px;
+  display: flex;
+  gap: 75px;
+  flex-wrap: wrap;
+}
+.card{
+  height: 310px; 
+  width: 300px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+.card .top{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top img{
+height: 45px;
+width: 45px;
+border-radius: 50%;
+border: 1px solid #dada;
+padding: 2px;
+
+}
+.top button{
+  display: flex;
+  align-items: center;
+  border: 1px solid #dadada;
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 5px;
+  gap: 3px;
+  background-color: transparent;
+  color: #080101;
+
+}
+
+.center h3{
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 15px;
+
+
+}
+.center h3 span{
+  font-size: 11px;
+  font-weight: 500;
+  color: #8b8b8b;
+  padding-left: 5%;
+
+}
+.center h2{
+  font-size: 20px;
+  padding-top: 25px;
+
+}
+.center .tag{
+  display: flex;
+  margin-top: 10px;
+  gap: 5px;
+ 
+}
+.center .tag h4{
+  font-size: 15px;
+  background-color: #dadada;
+  color: #111;
+  font-weight: 500;
+  padding: 3px 6px;
+  border-radius: 7px;
+}
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #b1b1b1;
+  padding-top: 25px;
+}
+.bottom button{
+  background-color: black;
+  color:white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  column-width: 600;
+}
+.bottom h3{
+  font-size: 17px;
+
+}
+.bottom p{
+  font-size: 10px;
+  color: #8b8b8b;
+}
+  .card:hover { transform: translateY(-6px); transition: transform .18s ease; box-shadow: 0 18px 30px rgba(0,0,0,0.45); }
+  .top button:hover, .bottom button:hover { opacity: 0.9; }
+
+  /* responsive: small screens stack nicely */
+  @media (max-width: 560px) {
+    .parent { padding: 20px; gap: 18px; }
+    .card { flex: 1 1 100%; height: auto; min-height: 320px; padding: 18px; }
+    .top img { height: 42px; width: 42px; }
+    .center h2 { font-size: 18px; }
+    .bottom .price h3 { font-size: 16px; }
+  }
+  /* ----------- Form Page Styling ----------- */
+.form-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: plum;
+  padding: 20px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.job-location {
+  text-align: center;
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.radio-group label {
+  font-size: 15px;
+}
+
+.submit-btn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+.form-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: plum;
+  padding: 20px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.job-location {
+  text-align: center;
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+form input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.submit-btn {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
