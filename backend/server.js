@@ -10,7 +10,14 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors({ origin: 'http://localhost:5173' })); // React port
+app.use(cors({
+  origin: [
+    'https://jobportalsbyreactjsandnodeexpress-6.vercel.app',
+    'http://localhost:5173'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+})); // React port
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
