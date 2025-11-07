@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './components/Card'
+import Card from './Components/Card'
 import { Routes, Route } from "react-router-dom";
 import HiringForm from "./Components/HiringForm";
 const App = () => {
